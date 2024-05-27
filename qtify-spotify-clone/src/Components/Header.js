@@ -22,7 +22,7 @@
               <img
                 src={Qtify}
                 alt="logo"
-                style={{ backgroundColor: "transparent",
+                style={{ 
                 width:"67px",
                 height:"34px",
                 marginLeft:"32px" }}

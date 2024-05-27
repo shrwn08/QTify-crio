@@ -46,4 +46,10 @@
         border-radius:12px;
         font-size:18px;
         font-weight:600;
+        
+        font-family: "poppins";
  } 
+
+ button:hover{
+    cursor: pointer;
+ }
