@@ -1,7 +1,6 @@
 import React from "react";
 import Qtify from "./Assets/Qtify-removebg-preview.png";
 import SearchIcon from "@mui/icons-material/Search";
-import HeroSection from "./HeroSection";
 import "./Header.css";
 function Header() {
   return (
@@ -34,7 +33,6 @@ function Header() {
         </div>
         <button className="feedbackBtn">Give Feedback</button>
       </div>
-      <HeroSection />
     </div>
   );
 }
