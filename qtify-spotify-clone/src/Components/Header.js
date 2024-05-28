@@ -14,18 +14,19 @@
               backgroundColor: "#34c94b",
               width: "100%",
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "center",
               alignItems: "center",
+              fontFamily:"poppins"
             }}
           >
-            <Box color="White" fontSize="25px" fontWeight="900">
+            <Box >
               <img
                 src={Qtify}
                 alt="logo"
                 style={{ 
                 width:"67px",
                 height:"34px",
-                margin:"10px 0 ",
+                margin:"20px 0 20px 32px",
                 }}
               />
             </Box>
@@ -40,38 +41,7 @@
               Give Feedback
             </button>
           </Box>
-          {/* <Box
-            sx={{
-              height: "270px",
-              width:"100%",
-              backgroundColor: "#121212",
-              display:"flex",
-              justifyContent:"center",
-              alignItems:"center"
-            }}
-          >
-            <Box
-              sx={{
-                width: "799px",
-                height: "212px",
-                display:"flex",
-                alignItems:"center"
-              }}
-            >
-              <Box
-                sx={{
-                  color: "#ffff",
-                  fontSize: "36px",
-                    textAlign:"center"
-                }}
-              >
-                100 Thousand songs, ad free Over thousand podcast episodes
-              </Box>
-              <Box>
-                <img src={Headphone} alt="headphone" width="150px" height="150px" />
-              </Box>
-            </Box>
-          </Box> */}
+         
         </Box>
       );
     }
