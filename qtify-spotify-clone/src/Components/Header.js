@@ -25,7 +25,8 @@
                 style={{ 
                 width:"67px",
                 height:"34px",
-                marginLeft:"32px" }}
+                margin:"10px 0 ",
+                }}
               />
             </Box>
     
