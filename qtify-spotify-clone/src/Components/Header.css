@@ -1,3 +1,12 @@
+.nav-container{
+  height: 74px;
+    background-color: #34c94b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
 .search-container {
     display: flex;
     align-items: center;
@@ -8,7 +17,16 @@
     margin: 20px auto; 
     background-color: aqua;
   }
-
+  .logo-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 32px;
+  }
+  .logo-image{
+    width:67px;
+    height:34px;
+    
+  }
   .search-input {
     flex: 1;
     width: 502px; 
@@ -36,7 +54,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     cursor: pointer;
-    font-family: 'poppins';
+    /* font-family: 'poppins'; */
   }
 
  .feedbackBtn{
@@ -49,7 +67,7 @@
         font-size:18px;
         font-weight:600;
         cursor: pointer;
-        font-family: "poppins";
+        font-family: "Poppins";
  } 
 
 .feedbackBtn:hover{

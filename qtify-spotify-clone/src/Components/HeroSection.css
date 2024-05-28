@@ -1,0 +1,28 @@
+.container {
+  height: 270px;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  width: 799px;
+  height: 212px;
+  display: flex;
+  align-items: center;
+}
+.text-container {
+  color: #ffff;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Poppins";
+}
+.headphone-container {
+}
+
+.headphone-img {
+  width: 150px;
+  height: 150px;
+}
