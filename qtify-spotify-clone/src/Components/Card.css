@@ -39,7 +39,7 @@
     width: 1353px;
     height: auto;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    gap: 6px;
    flex-wrap: nowrap;
    overflow-x: hidden;
@@ -63,7 +63,7 @@
 
 .cards{
     width: 159px;
-    height: 232px;
+    height: auto;
     
 }
 .album-img{

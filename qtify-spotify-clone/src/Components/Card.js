@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Chip from "@mui/material/Chip";
+// import Chip from "@mui/material/Chip";
+import AlbumCard from "./AlbumCard";
 import "./Card.css";
 
 function Card() {
@@ -35,35 +36,35 @@ function Card() {
     fetchNewAlbumData();
   }, []);
 
-  const topAlbumCard=()=>{
-    const albumsToShow = showAllTop ? topAlbumData : topAlbumData.slice(0, 7);
-    return albumsToShow.map((item) => (
-      <div className="cards" key={item.id}>
-        <div className="album-img">
-          <img src={item.image} alt="thumbnail" className="thumbnail" />
-          <div className="follow">
-            <Chip label={`${item.follows} follows`} variant="outlined" className="chip" />
-          </div>
-        </div>
-        <p className="album-title">{item.title}</p>
-      </div>
-    ));
-  }
+  // const topAlbumCard=()=>{
+  //   const albumsToShow = showAllTop ? topAlbumData : topAlbumData.slice(0, 7);
+  //   return albumsToShow.map((item) => (
+  //     <div className="cards" key={item.id}>
+  //       <div className="album-img">
+  //         <img src={item.image} alt="thumbnail" className="thumbnail" />
+  //         <div className="follow">
+  //           <Chip label={`${item.follows} follows`} variant="outlined" className="chip" />
+  //         </div>
+  //       </div>
+  //       <p className="album-title">{item.title}</p>
+  //     </div>
+  //   ));
+  // }
 
-  const newAlbumCard=()=>{
-    const albumsToShow = showAllNew ? newAlbumData : newAlbumData.slice(0, 7);
-    return albumsToShow.map((item) => (
-      <div className="cards" key={item.id}>
-        <div className="album-img">
-          <img src={item.image} alt="thumbnail" className="thumbnail" />
-          <div className="follow">
-            <Chip label={`${item.follows} follows`} variant="outlined" className="chip" />
-          </div>
-        </div>
-        <p className="album-title">{item.title}</p>
-      </div>
-    ));
-  }
+  // const newAlbumCard=()=>{
+  //   const albumsToShow = showAllNew ? newAlbumData : newAlbumData.slice(0, 7);
+  //   return albumsToShow.map((item) => (
+  //     <div className="cards" key={item.id}>
+  //       <div className="album-img">
+  //         <img src={item.image} alt="thumbnail" className="thumbnail" />
+  //         <div className="follow">
+  //           <Chip label={`${item.follows} follows`} variant="outlined" className="chip" />
+  //         </div>
+  //       </div>
+  //       <p className="album-title">{item.title}</p>
+  //     </div>
+  //   ));
+  // }
 
   return (
     <div className="grid-container">
@@ -80,7 +81,8 @@ function Card() {
           </div>
 
           <div className={`album-cards ${showAllTop?'show-all':''}`}>
-           {topAlbumCard()}
+           {/* {topAlbumCard()} */}
+           {topAlbumData.map((album)=> <AlbumCard key={album.id}  album={album}/>)}
           </div>
         </div>
         <div className="new-album">
@@ -94,7 +96,8 @@ function Card() {
             </button>
           </div>
           <div className={`album-cards ${showAllNew?'show-all':''}`}>
-            {newAlbumCard()}
+            {/* {newAlbumCard()} */}
+            {newAlbumData.map((album)=> <AlbumCard key={album.id}  album={album}/>)}
           </div>
         </div>
       </div>
