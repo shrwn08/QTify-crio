@@ -1,0 +1,100 @@
+.grid-container{
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+}
+.card-container{
+    width: 1384px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.album-name{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.show-btn{
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    color: #34c94b;
+    cursor: pointer;
+}
+
+.album-cards{
+    width: 1353px;
+    height: auto;
+   display: flex;
+   justify-content: space-between;
+   gap: 6px;
+   flex-wrap: nowrap;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   transition: height 0.3s ease-in-out;
+}
+.album-cards.show-all {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    height: auto;
+  }
+.top-album,.new-album{
+    width: 1376px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cards{
+    width: 159px;
+    height: 232px;
+    
+}
+.album-img{
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.thumbnail{
+    width: 159px;
+    height: 170px;
+}
+
+.chip-lable{
+    width: auto;
+    height: 23px;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #ffff;
+    font-family: 'poppins';
+}
+.album-title{
+    font-family: 'Poppins';
+    width: 105px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffff;
+}

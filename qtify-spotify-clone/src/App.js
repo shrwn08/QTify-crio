@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import HeroSection from "./Components/HeroSection";
+import Card from "./Components/Card"
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
+      <Card />
     </div>
   );
 }
