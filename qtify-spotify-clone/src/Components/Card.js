@@ -81,7 +81,6 @@ function Card() {
           </div>
 
           <div className={`album-cards ${showAllTop?'show-all':''}`}>
-           {/* {topAlbumCard()} */}
            {topAlbumData.map((album)=> <AlbumCard key={album.id}  album={album}/>)}
           </div>
         </div>
@@ -96,7 +95,6 @@ function Card() {
             </button>
           </div>
           <div className={`album-cards ${showAllNew?'show-all':''}`}>
-            {/* {newAlbumCard()} */}
             {newAlbumData.map((album)=> <AlbumCard key={album.id}  album={album}/>)}
           </div>
         </div>

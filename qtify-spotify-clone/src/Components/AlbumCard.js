@@ -19,6 +19,7 @@ function AlbumCard({ album }) {
               backgroundColor: "#121212",
               color: "#ffff",
               fontFamily: "Poppins",
+              marginLeft:"8px",
             }}
           />
         </div>
