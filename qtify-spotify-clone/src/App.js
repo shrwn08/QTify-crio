@@ -1,7 +1,9 @@
-import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
-import Card from "./Components/Card"
-import './App.css';
+import React from "react";
+import Header from "./Components/Header/Header"
+import HeroSection from "./Components/HeroSection/HeroSection";
+import Card from "./Components/Card/Card";
+
+import "./App.css";
 
 function App() {
   return (

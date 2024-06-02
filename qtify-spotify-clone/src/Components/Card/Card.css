@@ -1,0 +1,300 @@
+/* .grid-container {
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-new-card-container{ 
+    width: 1384px;
+    height: auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .top-card-container,.new-card-container{
+    width: 1376px;
+    height: auto;
+    position: relative;
+    margin-bottom: 32px;
+
+  }
+  .album-name-button {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  
+  .album-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+  }
+  
+  .show-btn {
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    color: #34c94b;
+    cursor: pointer;
+  }
+  
+  .album-cards {
+    width: 1353px;
+    height: auto;
+     display: grid;
+     grid-template-columns: repeat(6,1fr); 
+     justify-items: center;
+     gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .album-cards.show-all {
+    gap: 10px;
+  }
+  
+  .top-album,
+  .new-album {
+    max-width: 1376px; 
+    width: 100%;
+    height: auto;
+    
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .cards {
+    width:159px; 
+    height: 232px;
+    
+    
+  }
+  
+  .album-img {
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    background-color: #fff;
+   
+  }
+  
+  .thumbnail {
+    width: 159px;
+    height: 170px;
+  }
+  
+  .follow {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .album-title{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffff;
+    
+
+    
+  }
+  
+  .left-nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  
+  .right-nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  
+ 
+
+
+@media (max-width: 749px) {
+  
+  .album-cards {
+    grid-template-columns: repeat(4, 1fr);
+   
+    width: 100%;
+  }
+
+  .top-card-container, .new-card-container {
+    max-width: 500px; 
+  }
+
+  
+}
+
+ @media (min-width: 750px) and (max-width: 999px) {
+  .album-cards {
+    grid-template-columns: repeat(4);
+   
+    width: 100%;
+  }
+
+
+  .top-card-container, .new-card-container {
+    max-width: 839px;
+  }
+} 
+
+@media (min-width: 1000px)  {
+  .album-cards {
+    grid-template-columns: repeat(6);
+   
+    width: 100%;
+  }
+
+
+  .top-card-container, .new-card-container {
+    max-width: 1100px;
+  }
+} */
+.grid-container {
+  width: 100%;
+  height: auto;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.top-new-card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-card-container,
+.new-card-container {
+  width: 100%;
+  max-width: 1384px;
+  height: auto;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.album-name-button {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.album-name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.show-btn {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: #34c94b;
+  cursor: pointer;
+}
+
+.album-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  gap: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.album-cards.show-all {
+  gap: 10px;
+}
+
+
+
+.left-nav,
+.right-nav {
+  position: absolute;
+  top: 50%;
+}
+
+.left-nav {
+  left: 0;
+}
+
+.right-nav {
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  .album-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .album-img,
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .album-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 749px) {
+  .album-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .top-card-container,
+  .new-card-container {
+    max-width: 749px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 999px) {
+  .album-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .top-card-container,
+  .new-card-container {
+    max-width: 999px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .album-cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .top-card-container,
+  .new-card-container {
+    max-width: 1384px;
+  }
+}

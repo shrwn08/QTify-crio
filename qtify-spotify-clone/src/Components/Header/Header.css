@@ -1,0 +1,31 @@
+.nav-container{
+  height: 74px;
+    background-color: #34c94b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+
+ 
+
+
+ @media (max-width: 600px) {
+  .nav-containe{
+      padding: 0 15px;
+  }
+  .logo-image {
+      width: 60px;
+      height: 30px;
+  }
+  .search-input {
+      padding: 5px;
+  }
+  .feedbackBtn {
+      width: 100px;
+      padding: 5px;
+      font-size: 10px;
+  }
+}

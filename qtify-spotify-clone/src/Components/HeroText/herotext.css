@@ -1,0 +1,29 @@
+.text-container {
+    /*Div 3*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    color: #FFFF;
+    width: 556px;
+    height: 100px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+ }
+
+.thousand-Songs{
+    text-align: center;
+    width: 473px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.over-thousand{
+    width: 556px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+.hero-container {
+    /*Div 2*/
+      width: 799px;
+      height: 212px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  
+  
+  .headphone-container{
+      /*Div 4*/
+      width: 212px;
+      height: 212px;
+  }
+  .headphone-img {
+    /*image*/
+    width: 212px;
+    height: 212px;
+  }

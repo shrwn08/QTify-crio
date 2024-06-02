@@ -1,12 +1,3 @@
-.nav-container{
-  height: 74px;
-    background-color: #34c94b;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins";
-}
 .search-container {
     display: flex;
     align-items: center;
@@ -17,16 +8,7 @@
     margin: 20px auto; 
     background-color: aqua;
   }
-  .logo-container{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 32px;
-  }
-  .logo-image{
-    width:67px;
-    height:34px;
-    
-  }
+  
   .search-input {
     flex: 1;
     width: 502px; 
@@ -56,21 +38,3 @@
     cursor: pointer;
     /* font-family: 'poppins'; */
   }
-
- .feedbackBtn{
-        background-color: #121212;
-        color: #34C94B;
-        width:170px;
-        height:47px;
-        margin-right:32px;
-        border-radius:12px;
-        font-size:18px;
-        font-weight:600;
-        cursor: pointer;
-        font-family: "Poppins";
- } 
-
-.feedbackBtn:hover{
-    
-    background-color: #333
- }

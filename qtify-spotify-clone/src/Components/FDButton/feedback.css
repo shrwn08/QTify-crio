@@ -1,0 +1,17 @@
+.feedbackBtn{
+    background-color: #121212;
+    color: #34C94B;
+    width:170px;
+    height:47px;
+    margin-right:32px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    cursor: pointer;
+    font-family: "Poppins";
+} 
+
+.feedbackBtn:hover{
+
+background-color: #333
+}

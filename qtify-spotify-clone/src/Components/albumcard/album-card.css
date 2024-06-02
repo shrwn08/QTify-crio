@@ -1,0 +1,29 @@
+.cards {
+    width: 159px;
+    height: 232px;
+  }
+  
+  .album-img {
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .thumbnail {
+    width: 159px;
+    height: 170px;
+  }
+  
+  .follow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .album-title {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+  }

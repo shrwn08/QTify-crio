@@ -1,15 +1,21 @@
-import React from "react";
+
 import Chip from "@mui/material/Chip";
-import "./Card.css";
-function AlbumCard({ album }) {
-  console.log("album from albumcard", album);
+import "./album-card.css";
+function AlbumCard({ image,follows,title}) {
+
+  // if (!album) {
+  //   return <div>Loading...</div>;
+  // }
+
+  console.log("is Amused Young there ",(title === "Amused Young"))
+
   return (
     <div className="cards">
       <div className="album-img">
-        <img src={album.image} alt="thumbnail" className="thumbnail" />
+        <img src={image} alt="thumbnail" className="thumbnail" />
         <div className="follow">
           <Chip
-            label={`${album.follows} follows`}
+            label={`${follows} follows`}
             variant="outlined"
             className="chip"
             sx={{
@@ -19,12 +25,12 @@ function AlbumCard({ album }) {
               backgroundColor: "#121212",
               color: "#ffff",
               fontFamily: "Poppins",
-              marginLeft:"8px",
+              marginLeft: "8px",
             }}
           />
         </div>
       </div>
-      <p className="album-title">{album.title}</p>
+      <p className="album-title">{title}</p>
     </div>
   );
 }
