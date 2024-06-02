@@ -16,9 +16,6 @@ function Card() {
   const [topAlbum, setTopAlbum] = useState([]);
   const [newAlbum, setNewAlbum] = useState([]);
 
-
-
-
   function getColumnCount() {
     const width = window.innerWidth;
     if (width <= 480) return 2;
@@ -37,13 +34,13 @@ function Card() {
   }, []);
 
   useEffect(() => {
-    const albumFetch = async () => {
-      let topAlbumData = await fetchTopAlbum();
-      let newAlbumData = await fetchNewAlbum();
+    const fetchData = async () => {
+      const topAlbumData = await fetchTopAlbum();
+      const newAlbumData = await fetchNewAlbum();
       setTopAlbum(topAlbumData);
       setNewAlbum(newAlbumData);
     };
-    albumFetch();
+    fetchData();
   }, []);
 
   const dataLoaded = topAlbum.length > 0 && newAlbum.length > 0;
@@ -54,10 +51,16 @@ function Card() {
 
   const handleOnClickShowTop = () => {
     setShowAllTop(!showAllTop);
+    if (!showAllTop) {
+      setTopAlbumIndex(0);
+    }
   };
 
   const handleOnClickShowNew = () => {
     setShowAllNew(!showAllNew);
+    if (!showAllNew) {
+      setNewAlbumIndex(0);
+    }
   };
 
   const handleLeftNavTop = () => {
@@ -96,14 +99,14 @@ function Card() {
           </div>
           {!showAllTop && <LeftNavButton onClick={handleLeftNavTop} />}
           <div className={`album-cards ${showAllTop ? "show-all" : ""}`}>
-            {topAlbum
-              .slice(
-                topAlbumIndex,
-                showAllTop ? topAlbum.length : topAlbumIndex + columns
-              )
-              .map((album) => (
-                <AlbumCard key={album.id} image={album.image} follows={album.follows} title={album.title} />
-              ))}
+            {topAlbum.map((album) => (
+              <AlbumCard
+                key={album.id}
+                image={album.image}
+                follows={album.follows}
+                title={album.title}
+              />
+            ))}
           </div>
           {!showAllTop && <RightNavButton onClick={handleRightNavTop} />}
         </div>
@@ -116,14 +119,14 @@ function Card() {
           </div>
           {!showAllNew && <LeftNavButton onClick={handleLeftNavNew} />}
           <div className={`album-cards ${showAllNew ? "show-all" : ""}`}>
-            {newAlbum
-              .slice(
-                newAlbumIndex,
-                showAllNew ? newAlbum.length : newAlbumIndex + columns
-              )
-              .map((album) => (
-                <AlbumCard key={album.id} image={album.image} follows={album.follows} title={album.title} />
-              ))}
+            {newAlbum.map((album) => (
+              <AlbumCard
+                key={album.id}
+                image={album.image}
+                follows={album.follows}
+                title={album.title}
+              />
+            ))}
           </div>
           {!showAllNew && <RightNavButton onClick={handleRightNavNew} />}
         </div>
@@ -131,7 +134,5 @@ function Card() {
     </div>
   );
 }
-
-
 
 export default Card;
