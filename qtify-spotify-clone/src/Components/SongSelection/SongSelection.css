@@ -1,0 +1,48 @@
+.song-container {
+  width: 100%;
+  height: auto;
+  top: 985px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #121212;
+  font-family: "Poppins";
+  color: #ffff;
+}
+
+.song-text {
+  width: 63px;
+  height: 30px;
+  margin-left: 32px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffff;
+}
+
+.song-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: left;
+}
+.song-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust gap between cards as needed */
+}
+
+.song-card-container > div {
+  flex: 1 1 calc(33.333% - 16px); /* Adjust percentage as needed for your grid */
+  box-sizing: border-box;
+}
+
+.song{
+ margin: 0 32px;
+}

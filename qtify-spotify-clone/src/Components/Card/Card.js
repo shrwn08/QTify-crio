@@ -99,12 +99,10 @@ function Card() {
           </div>
           {!showAllTop && <LeftNavButton onClick={handleLeftNavTop} />}
           <div className={`album-cards ${showAllTop ? "show-all" : ""}`}>
-            {topAlbum.map((album) => (
+            {topAlbum.map((data) => (
               <AlbumCard
-                key={album.id}
-                image={album.image}
-                follows={album.follows}
-                title={album.title}
+                key={data.id}
+                data={data}
               />
             ))}
           </div>
@@ -119,12 +117,10 @@ function Card() {
           </div>
           {!showAllNew && <LeftNavButton onClick={handleLeftNavNew} />}
           <div className={`album-cards ${showAllNew ? "show-all" : ""}`}>
-            {newAlbum.map((album) => (
+            {newAlbum.map((data) => (
               <AlbumCard
-                key={album.id}
-                image={album.image}
-                follows={album.follows}
-                title={album.title}
+                key={newAlbum.id}
+                data={data}
               />
             ))}
           </div>
